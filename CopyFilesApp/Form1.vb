@@ -41,6 +41,7 @@ Public Class mainForm
 
         Dim files() As String = IO.Directory.GetFiles(txtFolderIn.Text, "*.*", IO.SearchOption.AllDirectories)
         Dim outputFolder As String = String.Empty
+        Dim repeatedFileName As String = String.Empty
 
         If files.Length > 0 Then
 
@@ -62,7 +63,11 @@ Public Class mainForm
                     outputFolder = Path.Combine(txtFolderOut.Text, Path.GetFileName(file))
 
                     If My.Computer.FileSystem.FileExists(outputFolder) Then
-                        Continue For
+
+                        repeatedFileName = Path.Combine(txtFolderOut.Text, Path.GetFileNameWithoutExtension(file) & g_count & Path.GetExtension(file))
+
+                        My.Computer.FileSystem.CopyFile(file, repeatedFileName)
+                        'Debug.Print(file)
                     Else
                         My.Computer.FileSystem.CopyFile(file, outputFolder)
                     End If
