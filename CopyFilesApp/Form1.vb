@@ -51,18 +51,23 @@ Public Class mainForm
 
                 prog_bar.Visible = True
 
+                btnExamIn.Enabled = False
+                btnExamOut.Enabled = False
+                btnExtract.Enabled = False
+                txtFolderIn.Enabled = False
+                txtFolderOut.Enabled = False
+
                 For Each file In files
+
                     outputFolder = Path.Combine(txtFolderOut.Text, Path.GetFileName(file))
 
-                    If My.Computer.FileSystem.FileExists(file) Then
+                    If My.Computer.FileSystem.FileExists(outputFolder) Then
                         Continue For
                     Else
                         My.Computer.FileSystem.CopyFile(file, outputFolder)
                     End If
 
-
                     prog_bar.Value = g_count
-                    'prog_bar.Refresh()
                     g_count += 1
 
                 Next
@@ -82,6 +87,13 @@ Public Class mainForm
 
         End If
 
+        prog_bar.Visible = False
+
+        btnExamIn.Enabled = True
+        btnExamOut.Enabled = True
+        btnExtract.Enabled = True
+        txtFolderIn.Enabled = True
+        txtFolderOut.Enabled = True
 
     End Sub
 
