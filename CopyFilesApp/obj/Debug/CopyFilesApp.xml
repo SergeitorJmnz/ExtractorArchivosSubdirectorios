@@ -22,6 +22,34 @@ CopyFilesApp
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="M:CopyFilesApp.mainForm.MainForm_Load(System.Object,System.EventArgs)">
+ <summary>
+ Eventos de carga del formulario
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:CopyFilesApp.mainForm.BtnExamIn_Click(System.Object,System.EventArgs)">
+ <summary>
+ Eventos del botón Examinar carpeta de entrada
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:CopyFilesApp.mainForm.BtnExamOut_Click(System.Object,System.EventArgs)">
+ <summary>
+ Eventos del botón Examinar carpeta de salida
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:CopyFilesApp.mainForm.BtnExtract_Click(System.Object,System.EventArgs)">
+ <summary>
+ Eventos del boton "Extraer"
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
 <member name="M:CopyFilesApp.mainForm.Timer1_Tick(System.Object,System.EventArgs)">
  <summary>
  Timer del botón extraer. Lo activa cuando amboz textbox tienen una ruta.

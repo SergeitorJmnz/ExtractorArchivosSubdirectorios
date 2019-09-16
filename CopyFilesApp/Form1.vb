@@ -2,6 +2,7 @@
 
 Public Class mainForm
 
+
 #Region "Variables globales"
 
     Dim fbdIn As New FolderBrowserDialog
@@ -12,15 +13,30 @@ Public Class mainForm
 #End Region
 
 
+#Region "Eventos del formulario"
+
+
+#Region "Carga del formulario"
+
+    ''' <summary>
+    ''' Eventos de carga del formulario
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnExtract.Enabled = False
         tmrExtractBtn.Start()
     End Sub
 
-#Region "Eventos del formulario"
+#End Region
 
 #Region "Botones"
 
+    ''' <summary>
+    ''' Eventos del botón Examinar carpeta de entrada
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub BtnExamIn_Click(sender As Object, e As EventArgs) Handles btnExamIn.Click
 
         If fbdIn.ShowDialog = DialogResult.OK Then
@@ -29,6 +45,11 @@ Public Class mainForm
 
     End Sub
 
+    ''' <summary>
+    ''' Eventos del botón Examinar carpeta de salida
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub BtnExamOut_Click(sender As Object, e As EventArgs) Handles btnExamOut.Click
 
         If fbdOut.ShowDialog = DialogResult.OK Then
@@ -37,6 +58,11 @@ Public Class mainForm
 
     End Sub
 
+    ''' <summary>
+    ''' Eventos del boton "Extraer"
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub BtnExtract_Click(sender As Object, e As EventArgs) Handles btnExtract.Click
 
         Dim files() As String = IO.Directory.GetFiles(txtFolderIn.Text, "*.*", IO.SearchOption.AllDirectories)
@@ -63,11 +89,9 @@ Public Class mainForm
                     outputFolder = Path.Combine(txtFolderOut.Text, Path.GetFileName(file))
 
                     If My.Computer.FileSystem.FileExists(outputFolder) Then
-
-                        repeatedFileName = Path.Combine(txtFolderOut.Text, Path.GetFileNameWithoutExtension(file) & g_count & Path.GetExtension(file))
+                        repeatedFileName = Path.Combine(txtFolderOut.Text, "#" & g_count & "_" & Path.GetFileName(file))
 
                         My.Computer.FileSystem.CopyFile(file, repeatedFileName)
-                        'Debug.Print(file)
                     Else
                         My.Computer.FileSystem.CopyFile(file, outputFolder)
                     End If
@@ -104,7 +128,7 @@ Public Class mainForm
 
 #End Region
 
-#End Region
+#Region "timers"
 
     ''' <summary>
     ''' Timer del botón extraer. Lo activa cuando amboz textbox tienen una ruta.
@@ -120,6 +144,11 @@ Public Class mainForm
         End If
 
     End Sub
+
+#End Region
+
+
+#End Region
 
 
 End Class
