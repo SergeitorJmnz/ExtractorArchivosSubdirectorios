@@ -77,6 +77,10 @@ Public Class mainForm
             Try
 
                 prog_bar.Visible = True
+                txtLabelBar.Visible = True
+                txtLabelDone.Visible = True
+                txtLabelExt.Visible = True
+                txtLabelFiles.Visible = True
 
                 btnExamIn.Enabled = False
                 btnExamOut.Enabled = False
@@ -84,11 +88,15 @@ Public Class mainForm
                 txtFolderIn.Enabled = False
                 txtFolderOut.Enabled = False
 
+                txtLabelFiles.Text = files.Count
+
                 For Each file In files
 
                     outputFolder = Path.Combine(txtFolderOut.Text, Path.GetFileName(file))
 
-                    If My.Computer.FileSystem.FileExists(outputFolder) Then
+                    If Path.GetFileName(file).First = "." Then
+                        Continue For
+                    ElseIf My.Computer.FileSystem.FileExists(outputFolder) Then
                         repeatedFileName = Path.Combine(txtFolderOut.Text, "#" & g_count & "_" & Path.GetFileName(file))
 
                         My.Computer.FileSystem.CopyFile(file, repeatedFileName)
@@ -97,6 +105,7 @@ Public Class mainForm
                     End If
 
                     prog_bar.Value = g_count
+                    txtLabelDone.Text = g_count
                     g_count += 1
 
                 Next
@@ -117,6 +126,10 @@ Public Class mainForm
         End If
 
         prog_bar.Visible = False
+        txtLabelBar.Visible = False
+        txtLabelDone.Visible = False
+        txtLabelExt.Visible = False
+        txtLabelFiles.Visible = False
 
         btnExamIn.Enabled = True
         btnExamOut.Enabled = True
@@ -128,7 +141,7 @@ Public Class mainForm
 
 #End Region
 
-#Region "timers"
+#Region "Timers"
 
     ''' <summary>
     ''' Timer del botón extraer. Lo activa cuando amboz textbox tienen una ruta.
@@ -144,6 +157,8 @@ Public Class mainForm
         End If
 
     End Sub
+
+
 
 #End Region
 

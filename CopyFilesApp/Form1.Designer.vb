@@ -32,15 +32,19 @@ Partial Class mainForm
         Me.txtFolderOut = New System.Windows.Forms.TextBox()
         Me.tmrExtractBtn = New System.Windows.Forms.Timer(Me.components)
         Me.prog_bar = New System.Windows.Forms.ProgressBar()
+        Me.txtLabelExt = New System.Windows.Forms.Label()
+        Me.txtLabelDone = New System.Windows.Forms.Label()
+        Me.txtLabelBar = New System.Windows.Forms.Label()
+        Me.txtLabelFiles = New System.Windows.Forms.Label()
         Me.boxInFolder.SuspendLayout()
         Me.boxOutFolder.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnExtract
         '
-        Me.btnExtract.Location = New System.Drawing.Point(423, 134)
+        Me.btnExtract.Location = New System.Drawing.Point(414, 160)
         Me.btnExtract.Name = "btnExtract"
-        Me.btnExtract.Size = New System.Drawing.Size(101, 34)
+        Me.btnExtract.Size = New System.Drawing.Size(101, 29)
         Me.btnExtract.TabIndex = 0
         Me.btnExtract.Text = "Extraer"
         Me.btnExtract.UseVisualStyleBackColor = True
@@ -104,17 +108,62 @@ Partial Class mainForm
         '
         'prog_bar
         '
-        Me.prog_bar.Location = New System.Drawing.Point(9, 144)
+        Me.prog_bar.Location = New System.Drawing.Point(9, 131)
         Me.prog_bar.Name = "prog_bar"
-        Me.prog_bar.Size = New System.Drawing.Size(399, 16)
+        Me.prog_bar.Size = New System.Drawing.Size(399, 26)
         Me.prog_bar.TabIndex = 3
         Me.prog_bar.Visible = False
+        '
+        'txtLabelExt
+        '
+        Me.txtLabelExt.AutoSize = True
+        Me.txtLabelExt.Location = New System.Drawing.Point(414, 131)
+        Me.txtLabelExt.Name = "txtLabelExt"
+        Me.txtLabelExt.Size = New System.Drawing.Size(55, 13)
+        Me.txtLabelExt.TabIndex = 4
+        Me.txtLabelExt.Text = "Extraídos:"
+        Me.txtLabelExt.Visible = False
+        '
+        'txtLabelDone
+        '
+        Me.txtLabelDone.AutoSize = True
+        Me.txtLabelDone.Location = New System.Drawing.Point(414, 144)
+        Me.txtLabelDone.Name = "txtLabelDone"
+        Me.txtLabelDone.Size = New System.Drawing.Size(37, 13)
+        Me.txtLabelDone.TabIndex = 5
+        Me.txtLabelDone.Text = "00000"
+        Me.txtLabelDone.Visible = False
+        '
+        'txtLabelBar
+        '
+        Me.txtLabelBar.AutoSize = True
+        Me.txtLabelBar.Location = New System.Drawing.Point(448, 144)
+        Me.txtLabelBar.Name = "txtLabelBar"
+        Me.txtLabelBar.Size = New System.Drawing.Size(12, 13)
+        Me.txtLabelBar.TabIndex = 6
+        Me.txtLabelBar.Text = "/"
+        Me.txtLabelBar.Visible = False
+        '
+        'txtLabelFiles
+        '
+        Me.txtLabelFiles.AutoSize = True
+        Me.txtLabelFiles.Location = New System.Drawing.Point(457, 144)
+        Me.txtLabelFiles.Name = "txtLabelFiles"
+        Me.txtLabelFiles.Size = New System.Drawing.Size(37, 13)
+        Me.txtLabelFiles.TabIndex = 7
+        Me.txtLabelFiles.Text = "00000"
+        Me.txtLabelFiles.Visible = False
         '
         'mainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(527, 172)
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.ClientSize = New System.Drawing.Size(527, 196)
+        Me.Controls.Add(Me.txtLabelFiles)
+        Me.Controls.Add(Me.txtLabelBar)
+        Me.Controls.Add(Me.txtLabelDone)
+        Me.Controls.Add(Me.txtLabelExt)
         Me.Controls.Add(Me.prog_bar)
         Me.Controls.Add(Me.boxOutFolder)
         Me.Controls.Add(Me.boxInFolder)
@@ -127,6 +176,7 @@ Partial Class mainForm
         Me.boxOutFolder.ResumeLayout(False)
         Me.boxOutFolder.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -139,4 +189,8 @@ Partial Class mainForm
     Friend WithEvents txtFolderOut As TextBox
     Friend WithEvents tmrExtractBtn As Timer
     Friend WithEvents prog_bar As ProgressBar
+    Friend WithEvents txtLabelExt As Label
+    Friend WithEvents txtLabelDone As Label
+    Friend WithEvents txtLabelBar As Label
+    Friend WithEvents txtLabelFiles As Label
 End Class
