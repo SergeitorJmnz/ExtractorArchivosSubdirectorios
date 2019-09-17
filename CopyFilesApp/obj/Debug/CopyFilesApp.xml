@@ -50,9 +50,16 @@ CopyFilesApp
  <param name="sender"></param>
  <param name="e"></param>
 </member>
-<member name="M:CopyFilesApp.mainForm.Timer1_Tick(System.Object,System.EventArgs)">
+<member name="M:CopyFilesApp.mainForm.tmrExtractBtn_Tick(System.Object,System.EventArgs)">
  <summary>
  Timer del botón extraer. Lo activa cuando amboz textbox tienen una ruta.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:CopyFilesApp.mainForm.TmrForm_Tick(System.Object,System.EventArgs)">
+ <summary>
+ Timer del formulario integro
  </summary>
  <param name="sender"></param>
  <param name="e"></param>

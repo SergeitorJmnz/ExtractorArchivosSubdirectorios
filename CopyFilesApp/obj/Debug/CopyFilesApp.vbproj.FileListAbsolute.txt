@@ -14,3 +14,19 @@ C:\Users\Bukit025Lenovo\Desktop\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug
 C:\Users\Bukit025Lenovo\Desktop\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug\CopyFilesApp.application
 C:\Users\Bukit025Lenovo\Desktop\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.exe.manifest
 C:\Users\Bukit025Lenovo\Desktop\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.application
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug\CopyFilesApp.exe.config
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug\CopyFilesApp.exe.manifest
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug\CopyFilesApp.application
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug\CopyFilesApp.exe
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug\CopyFilesApp.pdb
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug\CopyFilesApp.xml
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.vbprojAssemblyReference.cache
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.mainForm.resources
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.Resources.resources
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.vbproj.GenerateResource.cache
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.vbproj.CoreCompileInputs.cache
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.exe.manifest
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.application
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.exe
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.xml
+D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.pdb
