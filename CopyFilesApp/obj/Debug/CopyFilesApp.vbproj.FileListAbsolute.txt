@@ -30,3 +30,19 @@ D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.appli
 D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.exe
 D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.xml
 D:\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.pdb
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug\CopyFilesApp.exe.config
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug\CopyFilesApp.exe.manifest
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug\CopyFilesApp.application
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug\CopyFilesApp.exe
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug\CopyFilesApp.pdb
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\bin\Debug\CopyFilesApp.xml
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.vbprojAssemblyReference.cache
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.mainForm.resources
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.Resources.resources
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.vbproj.GenerateResource.cache
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.vbproj.CoreCompileInputs.cache
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.exe.manifest
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.application
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.exe
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.xml
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.pdb

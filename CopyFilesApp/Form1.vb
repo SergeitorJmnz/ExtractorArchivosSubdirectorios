@@ -8,7 +8,7 @@ Public Class mainForm
     Dim fbdIn As New FolderBrowserDialog
     Dim fbdOut As New FolderBrowserDialog
 
-    Dim g_count As Integer = 1
+    Dim g_count As Integer = 0
     Dim g_extracting As Boolean = False
     Dim g_files As Integer = 0
 
@@ -72,81 +72,6 @@ Public Class mainForm
         tmrForm.Start()
 
         g_extracting = True
-        'Dim files() As String = IO.Directory.GetFiles(txtFolderIn.Text, "*.*", IO.SearchOption.AllDirectories)
-        'Dim outputFolder As String = String.Empty
-        'Dim repeatedFileName As String = String.Empty
-        '
-        'If files.Length > 0 Then
-        '
-        '    prog_bar.Minimum = g_count
-        '    prog_bar.Maximum = files.Length
-        '
-        '    'MOD
-        '    tmrProgBar.Start()
-        '
-        '    Try
-        '
-        '        prog_bar.Visible = True
-        '        txtLabelBar.Visible = True
-        '        txtLabelDone.Visible = True
-        '        txtLabelExt.Visible = True
-        '        txtLabelFiles.Visible = True
-        '
-        '        btnExamIn.Enabled = False
-        '        btnExamOut.Enabled = False
-        '        btnExtract.Enabled = False
-        '        txtFolderIn.Enabled = False
-        '        txtFolderOut.Enabled = False
-        '
-        '        txtLabelFiles.Text = files.Count
-        '
-        '        For Each file In files
-        '
-        '            outputFolder = Path.Combine(txtFolderOut.Text, Path.GetFileName(file))
-        '
-        '            If Path.GetFileName(file).First = "." Then
-        '                Continue For
-        '            ElseIf My.Computer.FileSystem.FileExists(outputFolder) Then
-        '                repeatedFileName = Path.Combine(txtFolderOut.Text, "#" & g_count & "_" & Path.GetFileName(file))
-        '
-        '                My.Computer.FileSystem.CopyFile(file, repeatedFileName)
-        '            Else
-        '                My.Computer.FileSystem.CopyFile(file, outputFolder)
-        '            End If
-        '
-        '            'prog_bar.Value = g_count
-        '            'txtLabelDone.Text = g_count
-        '
-        '            g_count += 1
-        '
-        '        Next
-        '
-        '        g_count = 1
-        '        MessageBox.Show("Proceso finalizado con éxito!", "OK", MessageBoxButtons.OK, MessageBoxIcon.None)
-        '
-        '    Catch ex As Exception
-        '
-        '        MessageBox.Show("Ha ocurrido un error inesperado en el proceso, por favor, ponte en contacto con el servicio técnico.", "ERROR:", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        '
-        '    End Try
-        '
-        'Else
-        '
-        '    MessageBox.Show("La carpeta de origen está vacía." & vbNewLine & "Seleccione otra carpeta que no esté vacía e inténtelo de nuevo.", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-        '
-        'End If
-        '
-        'prog_bar.Visible = False
-        'txtLabelBar.Visible = False
-        'txtLabelDone.Visible = False
-        'txtLabelExt.Visible = False
-        'txtLabelFiles.Visible = False
-        '
-        'btnExamIn.Enabled = True
-        'btnExamOut.Enabled = True
-        'btnExtract.Enabled = True
-        'txtFolderIn.Enabled = True
-        'txtFolderOut.Enabled = True
 
     End Sub
 
@@ -234,8 +159,6 @@ Public Class mainForm
 
         If files.Length > 0 Then
 
-            'prog_bar.Minimum = g_count
-
             g_files = files.Length
 
             Try
@@ -244,12 +167,14 @@ Public Class mainForm
 
                     outputFolder = Path.Combine(txtFolderOut.Text, Path.GetFileName(file))
 
+
                     If Path.GetFileName(file).First = "." Then
                         Continue For
                     ElseIf My.Computer.FileSystem.FileExists(outputFolder) Then
                         repeatedFileName = Path.Combine(txtFolderOut.Text, "#" & g_count & "_" & Path.GetFileName(file))
 
                         My.Computer.FileSystem.CopyFile(file, repeatedFileName)
+
                     Else
                         My.Computer.FileSystem.CopyFile(file, outputFolder)
                     End If
@@ -262,7 +187,7 @@ Public Class mainForm
 
             Catch ex As Exception
 
-                MessageBox.Show("Ha ocurrido un error inesperado en el proceso de extracción, por favor, póngase en contacto con el servicio técnico." &
+                MessageBox.Show("Ha ocurrido un error inesperado en el proceso de extracción, por favor, póngase en contacto con el equipo de IT de Bukit BPO." &
                                  vbNewLine & vbNewLine & "Mensaje de error:" & vbNewLine & ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
             End Try
@@ -273,7 +198,7 @@ Public Class mainForm
 
         End If
 
-        g_count = 1
+        g_count = 0
         g_extracting = False
 
     End Sub

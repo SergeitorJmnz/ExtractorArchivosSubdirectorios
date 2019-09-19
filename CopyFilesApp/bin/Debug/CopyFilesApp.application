@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="CopyFilesApp.exe.manifest" size="4087">
+    <dependentAssembly dependencyType="install" codebase="CopyFilesApp.exe.manifest" size="4127">
       <assemblyIdentity name="CopyFilesApp.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>l2hAqlLRKT7qkuO7hGhmESqnapMQsxf4k/hgUdcDQhQ=</dsig:DigestValue>
+        <dsig:DigestValue>hjothTBY1/r6XKQfkOHSvs/Cf8UHLQ5BpSFvVspdGxM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
