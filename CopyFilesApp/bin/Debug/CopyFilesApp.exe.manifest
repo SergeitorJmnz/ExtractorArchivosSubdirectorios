@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CopyFilesApp.exe" size="90640">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CopyFilesApp.exe" size="93200">
       <assemblyIdentity name="CopyFilesApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sz9AT7s7FgyhuxBzQiJ5VfuNKAyyBrFaSSPfJp236DI=</dsig:DigestValue>
+        <dsig:DigestValue>ZuaEcRbH45aXgXDRg7RlPdKy580lpjKBaJlCS1u1oQk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

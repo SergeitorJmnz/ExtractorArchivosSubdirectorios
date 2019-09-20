@@ -46,3 +46,4 @@ C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\Co
 C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.exe
 C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.xml
 C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.pdb
+C:\Users\Bukit-Sergio\Desktop\VOLCADO PEN BUKIT SERGIO\PC SERGIO\programa IRG\CopyFilesApp\CopyFilesApp\obj\Debug\CopyFilesApp.errorForm.resources

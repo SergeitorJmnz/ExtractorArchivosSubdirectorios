@@ -64,5 +64,12 @@ CopyFilesApp
  <param name="sender"></param>
  <param name="e"></param>
 </member>
+<member name="M:CopyFilesApp.errorForm.BtnOK_Click(System.Object,System.EventArgs)">
+ <summary>
+ Eventos del boton de cerrar del formulario.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
 </members>
 </doc>
