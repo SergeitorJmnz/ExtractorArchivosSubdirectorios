@@ -1,17 +1,17 @@
-# Extractor de archivos de un directorio con múltiples subdirectorios
+# Extractor de archivos de un directorio con múltiples subdirectorios 📂
 
 *__Este programa extrae todos los archivos que esten dentro de un directorio y sus respectivos subdirectorios.__*
 
 
 En diversas ocasiones, para saber la cantidad de archivos que tiene un directorio en el que hay gran cantidad de subdirectorios 
 y donde cada uno tiene unos cuantos de dichos archivos, en windows solemos listar el contenido de la carpeta raíz con 
-```
+``
 dir /b /s lista.txt
-```
+``
 o con
-```
+``
 dir /b /s lista.csv
-```
+``
 para ver el nombre de todos los archivos y su ruta.
 
 Como la labor de ir extrayendo uno a uno dichos archivos es bastante tediosa, he creado esta sencilla aplicación que la realiza 
